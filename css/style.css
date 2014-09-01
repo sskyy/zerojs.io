@@ -2,6 +2,7 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+
 /*
 	Twenty 1.0 by HTML5 UP
 	html5up.net | @n33co
@@ -12,6 +13,7 @@
 
 body, #skel-layers-wrapper {
     background: #f3f6fa;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body.loading * {
@@ -653,7 +655,7 @@ table.default thead {
     letter-spacing: 0.075em;
     position: absolute;
     right: 1.5em;
-    text-transform: uppercase;
+ 
     top: 1em;
 }
 
@@ -699,7 +701,7 @@ table.default thead {
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    background: rgba(0,0,0, 0.15);
+    background: #384d65;
     border-radius: 2px;
 }
 
@@ -882,18 +884,18 @@ table.default thead {
 }
 
 #banner .inner header h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 900;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     margin: 0;
     padding-left: 0.05em;
     position: relative;
-    text-transform: uppercase;
+    
 }
 
 #banner .inner header p {
     font-size: 0.8em;
-    color: rgba(0, 0, 0, .4)
+    color: #5a6b7f;
 }
 
 #banner .inner p {
@@ -911,7 +913,7 @@ table.default thead {
     border-radius: 3px;
     text-decoration: none;
     border-bottom: none;
-    margin: 50px;
+    margin: 40px;
 }
 
 #banner .inner footer {
@@ -920,7 +922,8 @@ table.default thead {
     width: 760px;
     height: 340px;
     background-size: 100%;
-    margin: 50px;
+    margin: 30px;
+
 }
 
 /* Main */
