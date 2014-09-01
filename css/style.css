@@ -964,18 +964,20 @@ table.default thead {
     margin-left: -80px;
     background: url('../images/prev.png');
     background-size:100% ;
-    width: 16px;
+    width: 19px;
     border-bottom: none;
     height: 29px;
+    background-repeat: no-repeat;
 }
 
 #main section .bx-wrapper .bx-controls-direction a.bx-next{
     margin-right: -80px;
     background: url('../images/next.png');
     background-size:100% ;
-    width: 16px;
+    width: 19px;
     border-bottom: none;
     height: 29px;
+    background-repeat: no-repeat;
 
 }
 
