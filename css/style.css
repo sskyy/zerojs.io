@@ -654,7 +654,7 @@ table.default thead {
 #header nav {
     letter-spacing: 0.075em;
     position: absolute;
-    right: 1.5em;
+    right: 0;
  
     top: 1em;
 }
@@ -738,8 +738,8 @@ table.default thead {
 
 
 #header.alt nav {
-    right: 2.5em;
-    top: 1.75em;
+    right: 0;
+    top: .25em;
 }
 
 #header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
@@ -917,13 +917,8 @@ table.default thead {
 }
 
 #banner .inner footer {
-    margin: 0 auto;
-    background: url(../images/banner-footer.png);
-    width: 760px;
-    height: 340px;
-    background-size: 100%;
-    margin: 30px;
-
+    margin: 30px auto 0 auto;
+    max-width: 760px;
 }
 
 /* Main */
