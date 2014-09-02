@@ -917,7 +917,7 @@ table.default thead {
 }
 
 #banner .inner footer {
-    margin: 30px auto 0 auto;
+    margin: 0px auto 0 auto;
     max-width: 760px;
 }
 
@@ -1144,11 +1144,11 @@ body.index #main {
 
 #topPanel,
 #sidePanel {
-    background: #1c2021;
+    background: #293545;
     color: white;
     font-size: 0.8em;
     letter-spacing: 0.075em;
-    text-transform: uppercase;
+   
 }
 
 #topPanel nav,

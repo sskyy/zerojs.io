@@ -111,10 +111,10 @@
 			padding: 1.5em 1.5em 3em 1.5em;
 		}
 
-/* Banner */
+/* Banner 
 
 	#banner {
-		background-size: 10em, 10em, auto, cover;
+		/*background-size: 10em, 10em, auto, cover;*/
 		padding: 6em 0;
 	}
 
