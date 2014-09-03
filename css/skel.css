@@ -16,7 +16,7 @@
 
 	body {
 		/* min-width: (containers) */
-		min-width: 1200px;
+		min-width: 960px;
 	}
 
 	.container {
@@ -31,7 +31,7 @@
 	
 		.container.small {
 			/* width: (containers) * 0.75; */
-			width: 900px;
+			width: 960px;
 		}
 
 		.container.big {
@@ -41,7 +41,7 @@
 			max-width: 1500px;
 
 			/* min-width: (containers); */
-			min-width: 1200px;
+			min-width: 960px;
 		}
 
 /* Grid */

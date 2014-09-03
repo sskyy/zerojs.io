@@ -986,7 +986,8 @@ table.default thead {
 
 #main footer{
     text-align: center;
-    background: #f7f7f7;
+    background: #34465a;
+
 }
 
 #main footer ul li{
@@ -995,7 +996,11 @@ table.default thead {
 }
 
 #main footer ul li img{
-    height: 50px;
+   height: 80px;
+}
+#main footer .footer_line{
+    height: 1px;
+    margin-top: -90px;
 }
 
 
@@ -1025,24 +1030,34 @@ body.index #main {
 
 #footer {
     background: #34465a;
-    color: #fff;
-    padding: 1em;
+    color: #afbac7;
     text-align: left;
     font-size: .8em;
     overflow: hidden;
+    padding: 3em;
+
+
 }
 
-
+#footer .footer_logo img{
+    float: right;
+    width: 160px;
+    height: 62px;
+    margin:20px 82px 0px 20px;
+ 
+}
 #footer .copyright {
+     float: right;
+     font-size: 14px;
 }
 #footer .links{
-    float: right;
+    float: left;
     margin-bottom: 0;
+    margin-left: 30px;
 }
 
 #footer .links li{
-    display: inline-block;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 #footer .links li a{
@@ -1051,8 +1066,14 @@ body.index #main {
 }
 
 #footer .copyright a {
+   
     color: inherit;
     border-bottom: none;
+}
+#footer .container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Layers */
