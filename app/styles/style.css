@@ -76,7 +76,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h2 {
     font-size: 1.5em;
-    
+
 }
 
 h3 {
@@ -655,7 +655,7 @@ table.default thead {
     letter-spacing: 0.075em;
     position: absolute;
     right: 0;
- 
+
     top: 1em;
 }
 
@@ -846,7 +846,7 @@ table.default thead {
 #banner {
     color: white;
     cursor: default;
-    padding-top:6em; 
+    padding-top:6em;
     text-align: center;
     background-attachment: fixed;
     background-color: #34465a;
@@ -856,7 +856,7 @@ table.default thead {
     background-size: cover;
     overflow: hidden;
     max-height: 760px;
-    
+
 }
 
 #banner .inner {
@@ -893,7 +893,7 @@ table.default thead {
     margin: 0;
     padding-left: 0.05em;
     position: relative;
-    
+
 }
 
 #banner .inner header p {
@@ -941,7 +941,7 @@ table.default thead {
 
 #main {
     background: #fff;
-    padding-top: 7em;
+    padding-top: 40px;
 }
 
 #main header h2 {
@@ -1002,13 +1002,13 @@ table.default thead {
 
 }
 #main .main_part1{
-    
+
     width: 960px;
     margin: 0px auto;
 }
 #main .main_title{
     float: left;
-  
+
 }
 #main .main_icon{
     float: left;
@@ -1045,11 +1045,6 @@ table.default thead {
     margin-top: -90px;
 }
 
-
-body.index #main {
-    padding-top: 5em;
-}
-
 /* CTA */
 
 #cta {
@@ -1077,29 +1072,29 @@ body.index #main {
     font-size: .8em;
     overflow: hidden;
     padding: 3em;
-
-
 }
 
 #footer .footer_logo img{
-    float: right;
+    top: 0;
+    right: 55px;
     width: 160px;
     height: 62px;
-    margin:20px 82px 0px 20px;
- 
+    position: absolute;
 }
+
 #footer .copyright {
-     float: right;
-     font-size: 14px;
+    font-size: 14px;
+    margin-left: 80px;
+    color: #496F9D;
 }
 #footer .links{
-    float: left;
     margin-bottom: 0;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 #footer .links li{
-    margin-left: 30px;
+    margin-left: 40px;
+    float: left;
 }
 
 #footer .links li a{
@@ -1108,7 +1103,7 @@ body.index #main {
 }
 
 #footer .copyright a {
-   
+
     color: inherit;
     border-bottom: none;
 }
@@ -1211,7 +1206,7 @@ body.index #main {
     color: white;
     font-size: 0.8em;
     letter-spacing: 0.075em;
-   
+
 }
 
 #topPanel nav,
@@ -1269,4 +1264,64 @@ body.index #main {
 #sidePanel .indent-5 {
     display: inline-block;
     width: 5em;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.mb-20 {
+    margin-bottom: 30px;
+}
+
+.main-row {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    min-width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.main-row .cell-4 {
+  width: 30.37999%;
+  float: left;
+}
+
+.main-row h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.main-row small {
+    font-size: 14px;
+    color: #b5b5b5;
+}
+
+.main-row .install-step {
+    margin: 5px 0;
+    display: block;
+}
+
+.highlight {
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #394c5f;
+    width: 80%;
+    color: #8eacca;
 }
