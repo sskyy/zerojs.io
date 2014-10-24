@@ -702,7 +702,7 @@ table.default thead {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     background: #384d65;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 #header nav ul li.current > a {
@@ -1071,12 +1071,12 @@ table.default thead {
     text-align: left;
     font-size: .8em;
     overflow: hidden;
-    padding: 3em;
+    padding: 2.5em;
 }
 
 #footer .footer_logo img{
     top: 0;
-    right: 55px;
+    right: 82px;
     width: 160px;
     height: 62px;
     position: absolute;
@@ -1085,7 +1085,7 @@ table.default thead {
 #footer .copyright {
     font-size: 14px;
     margin-left: 80px;
-    color: #496F9D;
+    color: #243445;
 }
 #footer .links{
     margin-bottom: 0;
@@ -1111,6 +1111,7 @@ table.default thead {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -10px;
 }
 
 /* Layers */
@@ -1314,7 +1315,7 @@ table.default thead {
 .highlight {
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
-    border-radius: 9px;
+    border-radius: 5px;
     font-size: 12px;
     line-height: 16px;
     overflow: hidden;
@@ -1322,6 +1323,6 @@ table.default thead {
     padding: 20px;
     margin-bottom: 15px;
     background: #394c5f;
-    width: 80%;
-    color: #8eacca;
+    width: 100%;
+    color: #fff;
 }
