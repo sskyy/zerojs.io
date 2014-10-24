@@ -60,32 +60,29 @@
     <div id="main">
 
       <article>
-        <div class="main-row">
+        <div class="main-row clearfix">
           <div style="margin-bottom: 50px">
             <h2>About</h2>
-            <small>
-              Before you use zerojs, please install <a href="http://nodejs.org/">nodejs.</a>
-            </small>
           </div>
 
           <div class="cell-4">
-            <h3><i class="icon-atom"></i>A</h3>
-            <p>An Aura component represents a unit of a page.
-                An independent block of reusable code, wrapped
-                up so that it works well on its own or together with
-                other components.
+            <h3>模块化</h3>
+            <p>
+            ZERO 拥有非常灵活的模块系统，并立志于打造模块生态圈。<br><br>
+            举例而言，Twenty 是我们开发的一个博客引擎，它同时也是 ZERO 的官方模块之一。<br><br>
+            安装 twenty 是异常简单的，只需要在终端执行 zero install twenty 即可，zero会自动帮你安装 twenty 即其依赖。
             </p>
           </div>
           <div class="cell-4">
-            <h3><i class="icon-atom"></i>B</h3>
-            <p>An Aura component represents a unit of a page.
-                An independent block of reusable code, wrapped
-                up so that it works well on its own or together with
-                other components.
+            <h3>事件流编程架构</h3>
+            <p>
+              ZERO 拥有独特的事件流编程架构，可根据事件流转顺序编程。<br><br>
+              ZERO 还提供了相关的开发工具，可以在浏览器中查看的事件执行流程图。<br><br>
+              这种独特的架构，更适合大型应用、多人协作开发，同时也可以兼容传统 MVC 方式。
             </p>
           </div>
           <div class="cell-4">
-            <h3><i class="icon-atom"></i>B</h3>
+            <h3></h3>
             <p>An Aura component represents a unit of a page.
                 An independent block of reusable code, wrapped
                 up so that it works well on its own or together with
@@ -99,9 +96,9 @@
             <h2>Getting Started</h2>
           </div>
 
-          <span class="install-step">install zero with npm</span>
+          <span class="install-step">安装 zerojs</span>
           <div class="highlight">
-            npm install zero -g
+            npm install zerojs -g
           </div>
 
           <span class="install-step">initialize a zero project</span>
@@ -135,7 +132,7 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container" style="position:relative">
-         <ul class="links clearfix">
+         <ul class="links">
           <li><a href="#" class="">Home</a></li>
           <li><a href="#" class="">About</a></li>
           <li><a href="#" class="">Docs</a></li>
@@ -143,11 +140,6 @@
           <li><a href="#" class="">Fork me</a></li>
         </ul>
         <span class="copyright">Copyright &copy; 2014. zerojs All rights reserved.</span>
-
-        <div class="footer_logo">
-          <img src="images/logo.png">
-        </div>
-
       </div>
     </footer>
 

@@ -1085,7 +1085,6 @@ table.default thead {
 #footer .copyright {
     font-size: 14px;
     margin-left: 80px;
-    color: #496F9D;
 }
 #footer .links{
     margin-bottom: 0;
@@ -1103,10 +1102,10 @@ table.default thead {
 }
 
 #footer .copyright a {
-
     color: inherit;
     border-bottom: none;
 }
+
 #footer .container {
     width: 960px;
     margin-left: auto;
@@ -1293,11 +1292,16 @@ table.default thead {
 .main-row .cell-4 {
   width: 30.37999%;
   float: left;
+  padding-right: 20px;
+
+}
+
+.main-row .cell-4 p {
+    line-height: 24px;
 }
 
 .main-row h2 {
     font-size: 30px;
-    font-weight: bold;
     margin-bottom: 0;
 }
 
