@@ -1,0 +1,11 @@
+{
+  "name": "zero-official",
+  "version": "0.0.1",
+  "description": "zero official site",
+  "zero": {
+    "dependencies": {
+      "theme": "^0.0.1"
+    }
+  },
+  "author": "jiamiu"
+}
