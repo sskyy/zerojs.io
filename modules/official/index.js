@@ -3,7 +3,7 @@ var twentyModule = {
   theme : {
     directory : 'public',
     mock : {},
-    index : "/official/index"
+    index : "/official/index.html"
   }
 }
 
