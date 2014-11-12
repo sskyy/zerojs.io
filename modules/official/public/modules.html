@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>ZERO.JS Modules</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <script src="scripts/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="packages"></div>
+
+    <script>
+
+      $(document).ready(function() {
+          // get zero package list
+          $.get('/zero-packages')
+           .done(function(data) {
+             if(data) {
+               delete data._updated
+
+               html = '<ul>'
+
+               for(x in data) {
+                 if(data.hasOwnProperty(x)) {
+                   html += '<li>' + data[x].name + '</li>'
+                 }
+               }
+
+               html += '</ul>'
+
+               $('#packages').html(html)
+             }
+           })
+
+      })
+    </script>
+  </body>
+</html>
