@@ -119,15 +119,16 @@ nav li {
 }
 
 .footer nav.menu {
-  border-top: 1px solid #6D7E93;
   padding: 15px 15px 0 0;
+  border-top: 1px solid #6D7E93;
 }
 
 .footer nav.menu li {
   margin-left: 1.2em;
 }
 
-.footer nav.menu li a {
+.footer nav.menu li a,
+.footer nav.menu li span {
   color: #AFBAC7;
   font-weight: lighter;
 }
