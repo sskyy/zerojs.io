@@ -6,37 +6,62 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-
-    <script src="scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="vendor/foundation/css/normalize.css">
+    <link rel="stylesheet" href="vendor/foundation/css/foundation.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
-    <div id="packages"></div>
+    <header class="header">
+      <div class="container">
+        <h1><img src="images/logo@2x.png" height="40" width="160"></h1>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li class=""><a href="https://github.com/sskyy/zero/wiki">Docs</a></li>
+            <li class=""><a href="modules.html">Modules</a></li>
+            <li class=""><a href="https://github.com/sskyy/zero">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <script>
+    <div class="modules-well">
+      <div class="row">
+        <div class="large-6 columns">
+          <h3>ZeroJS Modules</h3>
+        </div>
+      </div>
+    </div>
 
-      $(document).ready(function() {
-          // get zero package list
-          $.get('/zero-packages')
-           .done(function(data) {
-             if(data) {
-               delete data._updated
+    <div class="modules-main">
+      <div class="modules-toolbar row">
+        <div class="large-9 columns">
+          33 packages
+        </div>
 
-               html = '<ul>'
+        <div class="large-3 columns hide-for-small">
+          <div class="row collapse">
+            <div class="large-10 small-9 columns">
+              <input type="text" id="search" name="search" placeholder="Search modules">
+            </div>
+            <div class="large-2 small-3 columns">
+              <button class="postfix search button expand" name="button" type="submit">
+                <i class="general foundicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-               for(x in data) {
-                 if(data.hasOwnProperty(x)) {
-                   html += '<li>' + data[x].name + '</li>'
-                 }
-               }
+      <div class="modules-packages row">
+        <div id="packages"></div>
+      </div>
+    </div>
 
-               html += '</ul>'
 
-               $('#packages').html(html)
-             }
-           })
-
-      })
-    </script>
+    <script src="vendor/jquery.js"></script>
+    <script src="scripts/modules.js"></script>
   </body>
 </html>
