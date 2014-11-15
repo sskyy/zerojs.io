@@ -6,23 +6,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/banner.css">
-    <link rel="stylesheet" href="scripts/jquery.bxslider/jquery.bxslider.css">
-
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <script src="scripts/skel.min.js"></script>
-    <script src="scripts/skel-layers.min.js"></script>
-    <script src="scripts/init.js"></script>
-    <script src="scripts/retina.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/foundation.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body class="index loading">
+  <body>
 
-    <!-- Header -->
-    <header id="header" class="alt">
-      <div class="container" style="position:relative">
-        <h1 id="logo"><img src="./images/logo.png"></h1>
-        <nav id="nav">
+    <header class="header">
+      <div class="container">
+        <h1><img src="images/logo@2x.png" height="40" width="160"></h1>
+        <nav>
           <ul>
             <li class="current"><a href="index.html">Home</a></li>
             <li class=""><a href="https://github.com/sskyy/zero/wiki">Docs</a></li>
@@ -33,113 +27,63 @@
       </div>
     </header>
 
-    <!-- Banner -->
-    <section id="banner">
-
-      <div class="inner">
-        <header>
-          <h2>
-            <span>ADVANCED WEB FRAMEWORK FOR</span>
-            <span style="color:#21d2b3">NODEJS</span>
-          </h2>
-          <p>Designed for change</p>
-        </header>
-        <div>
-          <a class="btn" href="/doc.html">Get started</a>
-        </div>
-        <footer>
-          <img src="images/banner-footer.png" width="100%">
-        </footer>
+    <div class="banner">
+      <div class="well">
+        <h3>ADVANCED WEB FRAMEWORK FOR NODEJS</h3>
+        <p>Designed for change</p>
       </div>
-
-    </section>
-
-    <!-- Main -->
-    <div id="main">
-
-      <article>
-        <div class="main-row clearfix">
-          <div style="margin-bottom: 50px">
-            <h2>About</h2>
-          </div>
-
-          <div class="cell-4">
-            <h3>模块化</h3>
-            <p>
-            ZERO 拥有非常灵活的模块系统，并立志于打造模块生态圈。<br><br>
-            举例而言，Twenty 是我们开发的一个博客引擎，它同时也是 ZERO 的官方模块之一。<br><br>
-            安装 twenty 是异常简单的，只需要在终端执行 zero install twenty 即可，zero会自动帮你安装 twenty 即其依赖。
-            </p>
-          </div>
-          <div class="cell-4">
-            <h3>事件流编程架构</h3>
-            <p>
-              ZERO 拥有独特的事件流编程架构，可根据事件流转顺序编程。<br><br>
-              ZERO 还提供了相关的开发工具，可以在浏览器中查看的事件执行流程图。<br><br>
-              这种独特的架构，更适合大型应用、多人协作开发，同时也可以兼容传统 MVC 方式。
-            </p>
-          </div>
-          <div class="cell-4">
-            <h3></h3>
-            <p>An Aura component represents a unit of a page.
-                An independent block of reusable code, wrapped
-                up so that it works well on its own or together with
-                other components.
-            </p>
-          </div>
-        </div>
-
-        <div class="main-row" style="margin-bottom: 50px">
-          <div class="mb-20">
-            <h2>Getting Started</h2>
-          </div>
-
-          <span class="install-step">安装 zerojs</span>
-          <div class="highlight">
-            npm install zerojs -g
-          </div>
-
-          <span class="install-step">initialize a zero project</span>
-          <div class="highlight">
-            zero new projectX && cd projectX
-          </div>
-
-          <span class="install-step">install a zero module</span>
-          <div class="highlight">
-            zero install twenty
-          </div>
-
-          Node modules installed with the --save option are added to the dependencies list in the package.json file. Then using npm ins
-        </div>
-      </article>
-
-      <footer>
-        <ul>
-          <li><img src="images/nodejs-light.png"></li>
-          <li><img src="images/sails.png"></li>
-          <li><img src="images/AngularJS.png"></li>
-        </ul>
-        <div class="footer_line">
-          <img src="images/line_footer.png">
-        </div>
-      </footer>
-
+      <div class="video">
+      </div>
     </div>
 
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="container" style="position:relative">
-         <ul class="links">
-          <li><a href="#" class="">Home</a></li>
-          <li><a href="#" class="">About</a></li>
-          <li><a href="#" class="">Docs</a></li>
-          <li><a href="#" class="">Download</a></li>
-          <li><a href="#" class="">Fork me</a></li>
-        </ul>
-        <span class="copyright">Copyright &copy; 2014. zerojs All rights reserved.</span>
+    <div class="demos row">
+      <div class="large-4 columns">
+        <h5>Developer Tools</h5>
+        <p>
+          Hi there.
+        </p>
       </div>
-    </footer>
+      <div class="large-4 columns">
+        <h5>Modules Ecosystem</h5>
+        <p>
+          Hi there. +1
+        </p>
+      </div>
+      <div class="large-4 columns">
+        <h5>Behavior Oriented Programming</h5>
+        <p>
+          Hi there. +2
+        </p>
+      </div>
+    </div>
 
+    <div class="architecture">
+      <div class="row">
+        Architecture img?
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+        <nav class="imgs">
+          <ul class="small-block-grid-3">
+            <li><img src="images/nodejs-light@2x.png"></li>
+            <li><img src="images/sails@2x.png"></li>
+            <li><img src="images/AngularJS@2x.png"></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+        <nav class="menu">
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li class=""><a href="https://github.com/sskyy/zero/wiki">Docs</a></li>
+            <li class=""><a href="modules.html">Modules</a></li>
+            <li class=""><a href="https://github.com/sskyy/zero">GitHub</a></li>
+            <li class="right"><a href="javascript:void()">Copyright © 2014. zerojs All rights reserved.</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </body>
 </html>
