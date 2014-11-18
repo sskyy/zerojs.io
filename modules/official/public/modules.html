@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
 
-  <body>
+  <body ng-app="app" ng-controller="ModulesControler">
     <header class="header">
       <div class="container">
         <h1><img src="images/logo@2x.png" height="40" width="160"></h1>
@@ -37,18 +37,50 @@
 
     <div class="modules-main">
       <div class="modules-toolbar row">
-        <div class="large-4 columns">
+        <div class="large-3 columns">
           <div class="row collapse">
-              <input type="text" id="search" name="search" class="search-input" placeholder="Search modules">
+              <input type="text" ng-model="searchText" class="search-input" placeholder="Search modules">
           </div>
         </div>
       </div>
 
+      <!-- thx to suffick @http://codepen.io/suffick/ -->
+      <div ng-if="loading" class="loading-wrapper">
+        <div id="load">
+          <div>G</div>
+          <div>N</div>
+          <div>I</div>
+          <div>D</div>
+          <div>A</div>
+          <div>O</div>
+          <div>L</div>
+        </div>
+      </div>
+
       <div class="modules-packages row">
-        <div id="packages"></div>
+        <nav>
+          <ul class="row collapse">
+            <li class="large-4 columns" ng-repeat="p in packages | filter:searchText">
+              <div class="package">
+                <h5 ng-bind-html="p.name | highlight:searchText"></h5>
+                <div class="content">
+                  <div class="description" ng-bind-html="p.description | highlight:searchText"></div>
+                  <div class="detail">
+                    Author:
+                    <span class="author" ng-bind-html="p.author.name | highlight:searchText"></span>
+                    <span class="version-wrapper">
+                      Latest version: <span class="version">xxx</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-    <script src="vendor/jquery.js"></script>
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-sanitize.min.js"></script>
     <script src="scripts/modules.js"></script>
   </body>
 </html>

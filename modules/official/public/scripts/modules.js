@@ -1,48 +1,33 @@
 
 
-$(document).ready(function() {
+angular.module('app', ['ngSanitize', 'ui.highlight'])
+  .controller('ModulesControler', ['$scope', '$http',
+    function($scope, $http) {
+      $scope.loading = true;
 
-    $.get('/zero-packages')
-     .done(function(data) {
-       if(data) {
-         delete data._updated
+      $http.get('/zero-packages')
+        .success(function(data) {
+          $scope.packages = data;
+        })
+        .finally(function() {
+          $scope.loading = false;
+        })
+    }
+  ])
 
-         html = '<nav><ul class="row collapse">'
 
-         for(x in data) {
-           if(data.hasOwnProperty(x)) {
-
-             var version = '';
-             for (y in data[x].versions) {
-               if(data[x].versions.hasOwnProperty(y)) {
-                  if (data[x].versions[y] === 'latest') {
-                    version = y;
-                  }
-               }
-             }
-
-             var author = data[x].author? data[x].author['name']: 'unknow';
-
-             html += '<li class="large-4 columns">'
-             html += '<div class="package">'
-               html += '<h5>' + data[x].name + '</h5>'
-               html += '<div class="content">'
-                 html += '<div class="description">' + data[x].description
-                 html += '</div>'
-                 html += '<div class="detail">Author: '
-                  html += '<span class="author">' + author + '</span>'
-                  html += '<span class="version-wrapper"> Latest version: <span class="version">' + version + '</span></span>'
-                 html += '</div>'
-               html += '</div>'
-             html += '</div>'
-             html += '</li>'
-           }
-         }
-
-         html += '</ul></nav>'
-
-         $('#packages').html(html)
-       }
-     })
-
-})
+angular.module('ui.highlight',[]).filter('highlight', function () {
+  return function (text, search, caseSensitive) {
+    if (text && (search || angular.isNumber(search))) {
+      text = text.toString();
+      search = search.toString();
+      if (caseSensitive) {
+        return text.split(search).join('<span class="ui-match">' + search + '</span>');
+      } else {
+        return text.replace(new RegExp(search, 'gi'), '<span class="ui-match">$&</span>');
+      }
+    } else {
+      return text;
+    }
+  };
+});
