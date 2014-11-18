@@ -158,7 +158,7 @@ nav li {
 
 /******** modules-well *********/
 .modules-banner {
-  padding: 30px;
+  padding: 40px;
   text-align: center;
 }
 
@@ -184,6 +184,10 @@ nav li {
 .ui-match {
   color: #0FC399;
   font-weight: bold;
+}
+
+.modules-main {
+  margin-bottom: 100px;
 }
 
 .modules-main .modules-toolbar {
