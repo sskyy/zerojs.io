@@ -9,7 +9,8 @@ var blackList = [
   'zero-config',
   'zero-crossings',
   'zero-framework',
-  'zero-s3'
+  'zero-s3',
+  'zero-fill'
 ]
 
 function search() {
@@ -19,12 +20,23 @@ function search() {
   request(url, function(error, response, body) {
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
+      delete data._updated
 
+      // remove blacklist packages
       blackList.forEach(function(packageName) {
         delete data[packageName]
       })
 
-      defer.resolve(data)
+      var packages = []
+
+      // convert to an array
+      for (var x in data) {
+        if (data.hasOwnProperty(x)) {
+          packages.push(data[x])
+        }
+      }
+
+      defer.resolve(packages)
     } else {
       defer.reject(error)
     }
