@@ -18,10 +18,10 @@
         <h1><img src="images/logo@2x.png" height="40" width="160"></h1>
         <nav>
           <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li class=""><a href="https://github.com/sskyy/zero/wiki">Docs</a></li>
-            <li class=""><a href="modules.html">Modules</a></li>
-            <li class=""><a href="https://github.com/sskyy/zero">GitHub</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://github.com/sskyy/zero/wiki">DOCS</a></li>
+            <li class="active"><a href="modules.html">MODULES</a></li>
+            <li><a href="https://github.com/sskyy/zero">GITHUB</a></li>
           </ul>
         </nav>
       </div>
@@ -37,20 +37,9 @@
 
     <div class="modules-main">
       <div class="modules-toolbar row">
-        <div class="large-9 columns">
-          33 packages
-        </div>
-
-        <div class="large-3 columns hide-for-small">
+        <div class="large-4 columns">
           <div class="row collapse">
-            <div class="large-10 small-9 columns">
-              <input type="text" id="search" name="search" placeholder="Search modules">
-            </div>
-            <div class="large-2 small-3 columns">
-              <button class="postfix search button expand" name="button" type="submit">
-                <i class="general foundicon-search"></i>
-              </button>
-            </div>
+              <input type="text" id="search" name="search" class="search-input" placeholder="Search modules">
           </div>
         </div>
       </div>
@@ -59,8 +48,6 @@
         <div id="packages"></div>
       </div>
     </div>
-
-
     <script src="vendor/jquery.js"></script>
     <script src="scripts/modules.js"></script>
   </body>
