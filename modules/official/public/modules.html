@@ -69,7 +69,7 @@
                     Author:
                     <span class="author" ng-bind-html="p.author.name | highlight:searchText"></span>
                     <span class="version-wrapper">
-                      Latest version: <span class="version">xxx</span>
+                      updated: <span class="version">{{p.time.modified | date : 'MMM d, y'}}</span>
                     </span>
                   </div>
                 </div>
