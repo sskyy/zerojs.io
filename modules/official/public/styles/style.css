@@ -1,9 +1,17 @@
+
+/* 考虑到google被墙，手动下载相关字体；此处为事例字体，@子溯 根据需要调整 */
+@font-face {
+  font-family: Abel;
+  src: url('../fonts/Abel-Regular.ttf');
+}
+
 body {
+  font-family: Abel, "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   color: #999;
 }
 
-ul, ol, dl {
-  font-size: 0.8rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Abel, "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
 nav {
@@ -217,7 +225,6 @@ nav li {
   border-bottom: 1px solid #DDD;
   padding-left: 10px;
   padding-bottom: 5px;
-  font-size: 0.9rem;
 }
 
 .modules-main .modules-packages .package .content {
