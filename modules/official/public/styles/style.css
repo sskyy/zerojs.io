@@ -79,16 +79,15 @@ nav li {
 }
 
 .banner .video {
+  position: relative;
   height: 400px;
-  margin: 60px auto 0;
   background: url('../images/banner.png') center center no-repeat;
 }
 
 .banner .video .play {
   position: absolute;
-  height: 120px;
+  height: 100%;
   width: 100%;
-  margin-top: 132px;
   background: url('../images/play.png') center center no-repeat;
   cursor: pointer;
 }
