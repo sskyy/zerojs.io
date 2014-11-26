@@ -60,7 +60,6 @@ nav li {
 /******** banner *********/
 .banner {
   max-height: 760px;
-  padding: 60px;
   text-align: center;
 }
 
@@ -79,12 +78,19 @@ nav li {
   text-transform: uppercase;
 }
 
-
 .banner .video {
-  width: 760px;
   height: 400px;
-  margin: 20px auto;
-  border: 1px solid #6D7E93;
+  margin: 60px auto 0;
+  background: url('../images/banner.png') center center no-repeat;
+}
+
+.banner .video .play {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  margin-top: 132px;
+  background: url('../images/play.png') center center no-repeat;
+  cursor: pointer;
 }
 
 /******** demos *********/
@@ -113,37 +119,8 @@ nav li {
 
 /******** footer *********/
 .footer {
-  background-color: #34465a;
-  padding: 24px 0 10px;
+  padding: 40px 0 40px;
 }
-
-.footer nav.imgs {
-  height: 60px;
-}
-
-.footer nav.imgs li {
-  padding-bottom: 0;
-}
-
-.footer img {
-  height: 60px;
-  padding: 10px 40px 0 40px;
-}
-
-.footer nav.menu {
-  padding: 15px 15px 0 0;
-  border-top: 1px solid #6D7E93;
-}
-
-.footer nav.menu li {
-  margin-left: 1.2em;
-}
-
-.footer nav.menu li a,
-.footer nav.menu li span {
-  color: #AFBAC7;
-}
-
 
 /**************************
 *                         *
