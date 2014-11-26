@@ -34,6 +34,22 @@ nav li {
   display: inline-block;
 }
 
+.header .logo {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  background-size: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/logo.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .header .logo {
+    background-image: url('../images/logo@2x.png');
+  }
+}
+
 .header nav {
   position: absolute;
   right: 0;
@@ -81,15 +97,33 @@ nav li {
 .banner .video {
   position: relative;
   height: 400px;
-  background: url('../images/banner.png') center center no-repeat;
+  background-size: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/banner.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .banner .video {
+    background-image: url('../images/banner@2x.png');
+  }
 }
 
 .banner .video .play {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url('../images/play.png') center center no-repeat;
+  background-size: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/play.png');
   cursor: pointer;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .banner .video .play{
+    background-image: url('../images/play@2x.png');
+  }
 }
 
 /******** demos *********/
