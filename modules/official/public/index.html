@@ -39,28 +39,65 @@
 
     <div class="demos row">
       <div class="large-4 columns">
-        <h5>Developer Tools</h5>
-        <p>
-          Hi there.
-        </p>
+        <img src="./images/banner1.svg">
       </div>
-      <div class="large-4 columns">
-        <h5>Modules Ecosystem</h5>
+      <div class="large-8 columns">
+        <h5>Behavior Based Module System</h5>
         <p>
-          Hi there. +1
+          Zero modules use a behavioral convention rather
+          than a calling convention. Once a module is installed,
+          provided behavior will be available to the system
+          automatically without  calling a single line of its api.
         </p>
-      </div>
-      <div class="large-4 columns">
-        <h5>Behavior Oriented Programming</h5>
+        <h5>Advanced Event System</h5>
         <p>
-          Hi there. +2
+          Using Zero build-in event Class to organize your business
+          logic makes your system more flexible.With Zero Dev Tool
+          installed, an interactive web interface is provided to trace
+          the data flow and the event fire stack of any request.
+        </p>
+        <h5>Fast growing ecosystem</h5>
+        <p>
+          There are already dozens of zero modules that provide
+          various functionality such as blogging, chatting and other
+          common features of Social-Network website. And three official Zero application
+          have been released for you to play with. Have fun!
         </p>
       </div>
     </div>
 
-    <div class="architecture">
+
+    <div class="spliter">
+      <div class="array-down">
+        <img src="./images/arrow-down.svg">
+      </div>
+    </div>
+
+    <div class="guide">
       <div class="row">
-        Architecture img?
+        <div class="column large-6 large-offset-3">
+          <h5>Quick Start</h5>
+          <p>Let's try to install blog system named Twenty which is based on Zero.</p>
+          <p>First, install zero as global module.</p>
+          <div class="code">
+            <p> <span class="cli-prefix">></span> npm install zero -g</p>
+          </div>
+          <p>Secondly, use Zero to create a new application and install Twenty as a module.</p>
+          <div class="code">
+            <p> <span class="cli-prefix">></span> zero new blog </p>
+            <p> <span class="cli-prefix">></span> cd blog </p>
+            <p> <span class="cli-prefix">></span> zero install twenty </p>
+          </div>
+          <p>Twenty requires a config file so we copy one and then start the app.</p>
+          <div class="code">
+            <p> <span class="cli-prefix">></span> cp modules/twenty/config.sample.js modules/twenty/config.js </p>
+            <p> <span class="cli-prefix">></span> node app </p>
+          </div>
+          <p>
+            If you have problem with npm installation, you can download the demo on GitHub. For
+            more demos please visit <a href="http://github.com/sskyy/zero">here</a>.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -68,7 +105,7 @@
       <div class="row">
         <nav class="menu">
           <ul>
-            <li class="right"><span>Copyright © 2014. zerojs All rights reserved.</span></li>
+            <li class="right"><span>Copyright © 2014. Zerojs All rights reserved.</span></li>
           </ul>
         </nav>
       </div>

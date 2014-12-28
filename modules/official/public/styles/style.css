@@ -26,6 +26,10 @@ nav li {
   color: #54CFB2;
 }
 
+a:link{
+  color : #54CFB2;
+}
+
 /**************************
 *                         *
 *       index.html        *
@@ -136,9 +140,10 @@ nav li {
 
 /******** demos *********/
 .demos {
+  margin-top: 80px;
   font-color: #074e68;
   padding: 40px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .demos h5 {
@@ -157,6 +162,52 @@ nav li {
   text-align: center;
   border-top: 1px solid #DDD;
 }
+
+.spliter{
+  margin: 80px 0 100px 0;
+  text-align: center;
+}
+.array-down{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #eee;
+  line-height: 40px;
+}
+
+/******* guide ***********/
+.guide{
+  margin-top: 50px;
+  /*font-family: "Helvetica Neue";*/
+}
+
+.guide p{
+  margin-bottom : 5px;
+  line-height: 100%;
+  font-weight: bolder;
+}
+
+.guide .code{
+  background:#F3F3F3;
+  border-radius: 8px;
+  padding: 10px;
+  color : #666;
+  margin : 15px 0;
+}
+
+.guide .code p{
+  margin-bottom: 0;
+  line-height: 150%;
+}
+
+.guide .code .cli-prefix{
+  color:#ccc;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: .8rem;
+}
+
 
 /******** footer *********/
 .footer {
