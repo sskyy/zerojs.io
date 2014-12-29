@@ -2,11 +2,11 @@
 /* 考虑到google被墙，手动下载相关字体；此处为事例字体，@子溯 根据需要调整 */
 @font-face {
   font-family: Abel;
-  src: url('../fonts/Abel-Regular.ttf');
+  src: url('../fonts/');
 }
 
 body {
-  font-family: Abel, "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-family:  "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   color: #999;
 }
 
@@ -53,14 +53,9 @@ a:link{
   background-size: 160px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../images/logo.png');
+  background-image: url('../images/logo.svg');
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .header .logo {
-    background-image: url('../images/logo@2x.png');
-  }
-}
 
 .header nav {
   position: absolute;
@@ -109,34 +104,25 @@ a:link{
 .banner .video {
   position: relative;
   height: 400px;
-  background-size: 420px;
+  background-size: 33%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../images/banner.png');
+  background-image: url('../images/banner.svg');
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .banner .video {
-    background-image: url('../images/banner@2x.png');
-  }
-}
 
 .banner .video .play {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-size: 90px;
+  background-size: 9%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../images/play.png');
+  background-image: url('../images/play.svg');
   cursor: pointer;
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .banner .video .play{
-    background-image: url('../images/play@2x.png');
-  }
-}
+
 
 /******** demos *********/
 .demos {
@@ -147,12 +133,10 @@ a:link{
 }
 
 .demos h5 {
-  font-weight: 200;
   margin-bottom: 10px;
 }
 
 .demos p {
-  font-weight: 200;
 }
 
 /******** architecture *********/
