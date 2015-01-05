@@ -268,10 +268,11 @@ a:link {
 
 .modules-main .modules-packages .package .content {
   padding: 0 10px;
+  font-size: 14px;
 }
 
 .modules-main .modules-packages .package .description {
-  height: 75px;
+  height: 95px;
   border-bottom: 1px dotted #DDD;
 }
 
