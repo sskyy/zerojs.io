@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="vendor/foundation/css/foundation.min.css">
     <link rel="stylesheet" href="styles/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/loading.css">
   </head>
 
   <body ng-app="app" ng-controller="ModulesControler">
@@ -41,19 +40,6 @@
           <div class="row collapse">
               <input type="text" ng-model="searchText" class="search-input" placeholder="Search modules">
           </div>
-        </div>
-      </div>
-
-      <!-- thx to suffick @http://codepen.io/suffick/ -->
-      <div ng-if="loading" class="loading-wrapper">
-        <div id="load">
-          <div>G</div>
-          <div>N</div>
-          <div>I</div>
-          <div>D</div>
-          <div>A</div>
-          <div>O</div>
-          <div>L</div>
         </div>
       </div>
 

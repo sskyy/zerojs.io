@@ -1,17 +1,7 @@
-
-/* 考虑到google被墙，手动下载相关字体；此处为事例字体，@子溯 根据需要调整 */
-@font-face {
-  font-family: Abel;
-  src: url('../fonts/');
-}
-
-body {
-  font-family:  "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-  color: #999;
-}
-
+body,
 h1, h2, h3, h4, h5, h6 {
-  font-family: Abel, "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-family:"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: #999;
 }
 
 nav {
@@ -26,7 +16,7 @@ nav li {
   color: #54CFB2;
 }
 
-a:link{
+a:link {
   color : #54CFB2;
 }
 
@@ -82,7 +72,7 @@ a:link{
 
 /******** banner *********/
 .banner {
-  max-height: 760px;
+  max-height: 600px;
   text-align: center;
 }
 
@@ -90,7 +80,7 @@ a:link{
   display: inline-block;
   margin: 0 auto;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .banner .well h3 {
@@ -104,7 +94,7 @@ a:link{
 
 .banner .video {
   position: relative;
-  height: 400px;
+  height: 360px;
   background-size: 33%;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,17 +118,25 @@ a:link{
 
 /******** demos *********/
 .demos {
-  margin-top: 80px;
-  font-color: #074e68;
+  height: 500px;
+  margin-top: 60px;
   padding: 40px 0;
   text-align: left;
 }
 
-.demos h5 {
-  margin-bottom: 10px;
+.demos-image {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 80px;
 }
 
-.demos p {
+.demos-content:not(:first-child) {
+  margin-top: 40px;
+}
+
+.demos h5 {
+  margin-bottom: 10px;
 }
 
 /******** architecture *********/
@@ -150,36 +148,40 @@ a:link{
 }
 
 .spliter{
-  margin: 80px 0 100px 0;
+  margin: 60px 0 80px 0;
   text-align: center;
 }
-.array-down{
+
+.arrow-down{
   display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background: #eee;
   line-height: 40px;
+  cursor: pointer;
 }
 
 /******* guide ***********/
-.guide{
-  margin-top: 50px;
-  /*font-family: "Helvetica Neue";*/
+.guide {
+  margin-top: 120px;
+  margin-bottom: 60px;
 }
 
-.guide p{
+.guide-block {
+  margin-top: 25px;
+}
+
+.guide p {
   margin-bottom : 5px;
-  line-height: 100%;
-  font-weight: bolder;
 }
 
-.guide .code{
+.guide .code {
   background:#F3F3F3;
   border-radius: 8px;
   padding: 10px;
   color : #666;
-  margin : 15px 0;
+  margin : 20px 0;
 }
 
 .guide .code p{
