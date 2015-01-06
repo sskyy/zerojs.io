@@ -15,7 +15,9 @@ nav li {
 .color-green {
   color: #54CFB2;
 }
-
+a{
+  color:  #54CFB2;
+}
 a:link {
   color : #54CFB2;
 }
@@ -34,6 +36,7 @@ a:link {
 
 .header h1 {
   display: inline-block;
+
 }
 
 .header .logo {
@@ -50,7 +53,7 @@ a:link {
 .header nav {
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 20px;
 }
 
 .header nav li {
@@ -59,7 +62,7 @@ a:link {
 
 .header nav li a {
   font-size: 14px;
-  color: #999999;
+  color: #858585;
 }
 
 .header nav li.active a {
@@ -80,26 +83,29 @@ a:link {
   display: inline-block;
   margin: 0 auto;
   text-align: left;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .banner .well h3 {
-  color: #999;
+  color: #858585;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing:1px;
 }
 
 .banner .well p {
-  color: #999;
+  color: #AEAEAE;
   text-transform: uppercase;
 }
 
 .banner .video {
   position: relative;
   height: 360px;
-  background-size: 33%;
+  background-size: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('../images/banner.svg');
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 
@@ -107,7 +113,7 @@ a:link {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-size: 9%;
+  background-size: 130px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('../images/play.svg');
@@ -119,7 +125,7 @@ a:link {
 /******** demos *********/
 .demos {
   height: 500px;
-  margin-top: 60px;
+  margin-top: 100px;
   padding: 40px 0;
   text-align: left;
 }
@@ -136,7 +142,15 @@ a:link {
 }
 
 .demos h5 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  color: #858585;
+  font-size: 20px;
+  font-weight: bold;
+}
+.demos p{
+  font-size: 1rem;
+  color: #BCBCBC;
+  
 }
 
 /******** architecture *********/
@@ -164,8 +178,8 @@ a:link {
 
 /******* guide ***********/
 .guide {
-  margin-top: 120px;
-  margin-bottom: 60px;
+  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 .guide-block {
@@ -173,12 +187,19 @@ a:link {
 }
 
 .guide p {
-  margin-bottom : 5px;
+  margin-bottom : 3px;
+  color: #BCBCBC;
+}
+.guide h3 {
+color: #858585;
+font-weight: bold;
+font-size: 24px;
+letter-spacing:1px;
 }
 
 .guide .code {
-  background:#F3F3F3;
-  border-radius: 8px;
+  background:#444444;
+  border-radius: 5px;
   padding: 10px;
   color : #666;
   margin : 20px 0;
@@ -187,6 +208,7 @@ a:link {
 .guide .code p{
   margin-bottom: 0;
   line-height: 150%;
+  color: #BAD5BC;
 }
 
 .guide .code .cli-prefix{
@@ -247,6 +269,8 @@ a:link {
 .modules-main .modules-toolbar .search-input {
   border-radius: 5px;
   margin-left: -5px;
+  box-shadow: none;
+
 }
 
 .modules-main .modules-packages nav li {
@@ -260,10 +284,13 @@ a:link {
 }
 
 .modules-main .modules-packages .package h5 {
-  color: gray;
+  color: #808080;
+  font-weight: bold;
   border-bottom: 1px solid #DDD;
   padding-left: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
+  padding-top: 3px;
+  font-size: 16px;
 }
 
 .modules-main .modules-packages .package .content {
@@ -287,4 +314,8 @@ a:link {
 
 .modules-main .modules-packages .package .version-wrapper {
   float: right;
+}
+.Copyright{
+  color: #C4C4C4;
+  text-align: center;
 }
